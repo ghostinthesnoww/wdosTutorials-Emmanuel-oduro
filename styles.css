@@ -1,0 +1,345 @@
+/* Include your style in here for all pages. 
+Extra style for cssdemo.html can be added in cssdemo.css */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c0a16b;
+}
+
+/* Header styles */
+/* Header */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Logo */
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 2rem; /* Add margin to the left for better readability */
+}
+
+/* Navigation */
+nav {
+  margin-right: 2rem; /* Add margin to the right for better spacing */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav ul li a:hover {
+  color: #c0a16b;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin: 1rem 0 0 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .container {
+    padding-top: 12rem;
+  }
+}
+
+
+
+
+/* Main section styles */
+main {
+  margin-top: 4rem;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #c0a16b;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  margin-bottom: 2rem;
+}
+
+.cta:hover {
+  background-color: #f0c778;
+  color: #000;
+}
+
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.contact-form .heading {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form textarea {
+  height: 8rem;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #ff6384;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+a {
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #c0a16b;
+}
+
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.body {
+  padding: 20px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  flex: 1;
+  font-size: 16px;
+}
+
+.skill-level {
+  flex: 3;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.skill-percent {
+  background-color: #333;
+  height: 100%;
+}
+
+.skill-percent-number {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .skill {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .skill-name {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .skill-percent-number {
+    margin-left: 0;
+  }
+}
+
+
+
+
+/* demo */
+.demo a {
+  color: #000;
+}
+
+.demo a:hover {
+  color: #c0a16b;
+}
+.image img {
+  width: 50%;
+  height: auto;
+}

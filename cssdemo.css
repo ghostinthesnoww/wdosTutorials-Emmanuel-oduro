@@ -1,0 +1,176 @@
+/* This is the extra style for the CSS demo page only
+This should be linked to alongside the main styles.css page */
+
+/* CSS Demo Page Styles */
+
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1140px; /* This is the default Bootstrap container width */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+a {
+  color: #007bff;
+}
+
+/* Header Styles */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+}
+
+header,
+article {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Article Styles */
+article {
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.typing-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.typing-text {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+  animation: typing 3s steps(60, end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 5px solid #007bff;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-bottom: 20px;
+  margin-left: 3rem;
+}
+
+li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Link Styles */
+a:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+ul li a {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  color: #f44336;
+}
